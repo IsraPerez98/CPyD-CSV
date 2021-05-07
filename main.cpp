@@ -7,8 +7,6 @@
 #include "leeryescribir.h"
 #include "funciones.h"
 
-namespace fs = std::filesystem;
-
 /**
  * Este programa procesa el archivo csv indicado y
  * produce los archivos resultantes segun lo dispuesto en el Taller 1
@@ -25,9 +23,9 @@ int main(int argc, char** argv)
         return (EXIT_FAILURE);
     }
 
-    fs::path archivo = fs::path(argv[1]);
+    std::filesystem::path archivo = std::filesystem::path(argv[1]);
 
-    fs::path directorio = archivo.parent_path();
+    std::filesystem::path directorio = archivo.parent_path();
 
     /*
      * Necesitamos la ubicacion del archivo original, para general los archivos de salida
