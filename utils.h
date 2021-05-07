@@ -1,9 +1,16 @@
 #pragma once
 
 #include <string>
+#include <iomanip>
 #include <sstream>
 
-std::string ftos(float f);
+/**
+ * funcion que transforma un float a string
+ * 
+ * @param f el valor float
+ * @param f precision de decimales
+ */
+std::string ftos(float f, int precision);
 
 /**
  * quickSort que funciona con arreglos bidimensionales

@@ -1,15 +1,10 @@
 #include "utils.h"
 
 
-/**
- * funcion que transforma un float a string
- * 
- * @param f el valor float
- */
-std::string ftos(float f)
+std::string ftos(float f, int precision)
 {
     std::ostringstream ss;
-    ss << f;
+    ss << std::fixed << std::setprecision(precision) << f;
     return ss.str();
 }
 

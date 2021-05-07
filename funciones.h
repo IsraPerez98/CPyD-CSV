@@ -6,6 +6,8 @@
 
 #include "utils.h"
 
+#define PRECISIONFLOAT 6
+
 /**
  * Agrega el promedio general al arreglo bidimensional en la columna 10
  * 

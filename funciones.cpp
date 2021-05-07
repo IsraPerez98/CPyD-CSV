@@ -1,6 +1,5 @@
 #include "funciones.h"
 
-
 void AddPromedioGeneral (std::string arreglo[][14],int lineas){//promedios recibe arreglo_datos, 15000
     /*
     std::string arregloCopia[15000][10] = arreglo;
@@ -17,25 +16,25 @@ void AddPromedioGeneral (std::string arreglo[][14],int lineas){//promedios recib
             acu = std::stof(arreglo[i][j]) + acu;
         }
         float promedio = acu / 8;        
-        arreglo[i][10] = ftos(promedio);
+        arreglo[i][10] = ftos(promedio, PRECISIONFLOAT);
     } 
 }
 void AddPromedioArtesEdFisica (std::string arreglo[][14],int lineas){//promedios recibe arreglo_datos, 15000
     for(int i = 0; i < lineas; i++){ //calcular promedios
         float promedio = (std::stof(arreglo[i][8]) + std::stof(arreglo[i][9]) )/ 2;
-        arreglo[i][11] = ftos(promedio);
+        arreglo[i][11] = ftos(promedio, PRECISIONFLOAT);
     }
 }
 void AddPromedioLenguaHistoria (std::string arreglo[][14],int lineas){//promedios recibe arreglo_datos, 15000
     for(int i = 0; i < lineas; i++){ //calcular promedios
         float promedio = (std::stof(arreglo[i][2]) + std::stof(arreglo[i][6]) )/ 2;
-        arreglo[i][12] = ftos(promedio);
+        arreglo[i][12] = ftos(promedio, PRECISIONFLOAT);
     }
 }
 void AddPromedioTecnoMateCiencia (std::string arreglo[][14],int lineas){//promedios recibe arreglo_datos, 15000
     for(int i = 0; i < lineas; i++){ //calcular promedios
         float promedio = (std::stof(arreglo[i][7]) + std::stof(arreglo[i][4]) + std::stof(arreglo[i][5]))/ 3;
-        arreglo[i][13] = ftos(promedio);
+        arreglo[i][13] = ftos(promedio, PRECISIONFLOAT);
     }
 }
 
